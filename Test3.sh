@@ -1,5 +1,5 @@
 #! /bin/bash
-echo "Test 3 - checking exchange rates"
+echo "Test 3 (c) - Script to check exchange rates"
 #giving inputs to see the exchnage rates
 input1="1 dollars"
 input2="1 pounds"
@@ -14,6 +14,7 @@ ExpectedOutputEuro2="0.84 Pounds"
 javaOutput=$(java CurrencyConverter $input1 2>&1)
 #Checking inputs.If java output is same as actual exchange rates we wanted, test passes otherwise it fails
 if [[ "$javaOutput" == *"$ExpectedOutputDollar1"* && *"ExpectedOutputDollar2"* ]]; then
+#Using echo comman to print test results
 echo "Test 3 passed"
 else
 echo "Test 3 failed"
