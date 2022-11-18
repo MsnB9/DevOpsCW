@@ -8,7 +8,6 @@ if [ "$javaOutput" = "$ExpectedOutput" ]; then
 echo "Test 1 with no input passed"
 else
 echo "Test 1 with no value given failed"
-exit 1
 fi
 
 
