@@ -15,23 +15,23 @@ javaOutput=$(java CurrencyConverter $input1 2>&1)
 #Checking inputs.If java output is same as actual exchange rates we wanted, test passes otherwise it fails
 if [[ "$javaOutput" == *"$ExpectedOutputDollar1"* && *"ExpectedOutputDollar2"* ]]; then
 #Using echo comman to print test results
-echo "Test 3 passed"
+echo "Test 3 passed with 1 dollar input"
 else
-echo "Test 3 failed"
+echo "Test 3 failed with 1 dollar input"
 exit 1
 fi
 javaOutput=$(java CurrencyConverter $input2 2>&1)
 if [[ "$javaOutput" == *"$ExpectedOutputPound1"* && *"ExpectedOutputPound2"* ]]; then
-echo "Test 3 passed"
+echo "Test 3 passed with 1 pounds input"
 else
-echo "Test 3 failed"
+echo "Test 3 failed with 1 pounds input"
 exit 1
 fi
 javaOutput=$(java CurrencyConverter $input3 2>&1)
 if [[ "$javaOutput" == *"$ExpectedOutputEuro1"* && *"ExpectedOutputPoundEuro2"* ]]; then
-echo "Test 3 passed"
+echo "Test 3 passed with 1 euro input"
 else
-echo "Test 3 failed"
+echo "Test 3 failed with 1 euro"
 fi
 
 
