@@ -37,6 +37,7 @@ public class CurrencyConverter {
                                 break;
                         case "euros":
                                 // For Euro Conversion
+                                //Changed the number from "1.31" to 1.13 as its the correct one 
                                 dollar = amount * 1.13;
                                 System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                                 pound = amount * 0.84;
