@@ -11,6 +11,7 @@ input7="1 Pounds"
 input8="1 Dollars"
 input9="1 Euros"
 OldOutput="Thank you for using the converter."
+#running script with lower case pound input
 Lowercasepounds=$(java CurrencyConverter $input4)
 if [ "$lowercasecasepounds" != "$OldOutput" ]; then
 echo "Test 2 lowercasepounds input passed"
@@ -32,6 +33,7 @@ else
 echo "Test 2 Lower case euros input failed"
 exit 1
 fi
+#running upper case pounds as input to see the test
 Uppercasepounds=$(java CurrencyConverter $input1)
 if [ "$Uppercasepounds" != "$OldOutput" ]; then
 echo "Test 2 Upper case pounds input passed"
