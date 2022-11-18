@@ -8,7 +8,10 @@ public class CurrencyConverter {
 
         public static void main(String[] args) {
 
-                double amount, dollar, pound, code, euro;
+                double amount;
+                double dollar;
+                double pound;
+                double euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
 
@@ -26,7 +29,7 @@ public class CurrencyConverter {
                                 break;
                         case "pounds":
                                 // For Pound Conversion
-                                dollar = amount + 1.36;
+                                dollar = amount * 1.36;
                                 System.out.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
                                 euro = amount * 1.19;
                                 System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
@@ -38,6 +41,7 @@ public class CurrencyConverter {
                                 pound = amount * 0.84;
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                 break;
+                                
                 }
                 System.out.println("Thank you for using the converter.");
         }
