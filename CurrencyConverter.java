@@ -17,6 +17,7 @@ public class CurrencyConverter {
 
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1];
+                currency = currency.toLowerCase();
 
                 // For amounts Conversion
                 switch (currency){
@@ -43,6 +44,7 @@ public class CurrencyConverter {
                                 break;
                                 default;
                                     System.out.println("Please enter a valid value");
+                                break;
 
                 }
                 System.out.println("Thank you for using the converter.");
