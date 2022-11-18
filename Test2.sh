@@ -1,4 +1,5 @@
  #! /bin/bash
+#Sonar TEST
 echo "Test 2 (b)- Converting Currency in all formats"
 input1="1 POUNDS"
 input2="1 DOLLARS"
