@@ -43,7 +43,7 @@ public class CurrencyConverter {
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                 break;
                         default:
-                                    System.out.println("Please enter a valid value");
+                                    System.out.println("Please insert value");
                                 break;
 
                 }
